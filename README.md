@@ -12,6 +12,9 @@ Set up up git
 6) git push # need to add uname and pw
 7) git status 
 
+# Set up heroku
+
+
 
 
 
