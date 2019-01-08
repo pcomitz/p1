@@ -17,7 +17,11 @@ Set up up git
 3.  app is phcp1 
 4.  configure add ons 
 5.  view on https://www.adminer.org
-6. more to do 
+6.  Need to install heroku cli
+7.  do heroku login on cli
+8. To oconnect to db
+9. DATABASE_URL=$(heroku config:get DATABASE_URL -a your-app) your_process
+    - my app is phcp1
 
 # Set up python 
 1. path=%path%;G:\Python\Python37;
