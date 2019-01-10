@@ -22,6 +22,9 @@ Set up up git
 8. To oconnect to db
 9. DATABASE_URL=$(heroku config:get DATABASE_URL -a your-app) your_process
     - my app is phcp1
+    - heroku config:get DATABASE_URL -a phcp1
+    - see https://devcenter.heroku.com/articles/connecting-to-heroku-postgres-databases-from-outside-of-heroku
+    
 
 # Set up python 
 1. path=%path%;G:\Python\Python37;
