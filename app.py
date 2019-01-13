@@ -36,7 +36,7 @@ def index():
 def authenticate():
     name = request.form.get("uname")
     pw = request.form.get("password")
-    print(f"name {name}")
-    print(f"pw {pw}")
+    print(f"name {name} ")
+    print(f"pw {pw} ")
     return name+" "+pw
 

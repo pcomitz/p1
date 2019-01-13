@@ -10,7 +10,7 @@ Set up up git
 6. git push # need to add uname and pw
 7. git status 
 
-# Set up heroku
+## Set up heroku
 
 1.  https://www.heroku.com
 2.  pcomitz@live.com
@@ -25,12 +25,46 @@ Set up up git
     - heroku config:get DATABASE_URL -a phcp1
     - see https://devcenter.heroku.com/articles/connecting-to-heroku-postgres-databases-from-outside-of-heroku
     
+10. Database Credentials 
 
-# Set up python 
+Host
+ec2-174-129-18-247.compute-1.amazonaws.com
+Database
+d740lk1tdq3uhl
+User
+tyivzozvjfptcx
+Port
+5432
+Password
+360dab57fd1a56af249e12d1d0bd82884585e75c8dc9b4c9ba679cffbffd942b
+
+## Set up python 
 1. path=%path%;G:\Python\Python37;
 2. path=%path%;G:\Python\Python37\Scripts;
 3. Now can run  
     - pip3 install -r requirements.txt
 4. Can run flask with: <code>flask run</code> 
+
+
+## Postgresql
+
+Show all tables <br>
+<code>
+SELECT table_name FROM information_schema.tables WHERE table_schema='public'</code>
+
+Show columns <br>
+<code>
+select * from information_schema.columns where table_schema = 'public'; </code>
+
+<code>
+SELECT * FROM "books" LIMIT 50;
+</code>
+
+## Markdown 
+https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown
+https://code.visualstudio.com/Docs/languages/markdown
+
+Visual Studio code toggle view 
+ctrl + shift + V
 
 
