@@ -60,11 +60,19 @@ select * from information_schema.columns where table_schema = 'public'; </code>
 SELECT * FROM "books" LIMIT 50;
 </code>
 
+<code>select * from users where users.uname = 'Jerry Garcia';</code>
+<code>select * from users where users.uname = 'Jerry Garcia' and pw = 'darkstar';</code>
+<code>select uname from users where uname = 'Jerry Garcia';</code>
+
 ## Markdown 
 https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown
 https://code.visualstudio.com/Docs/languages/markdown
 
 Visual Studio code toggle view 
 ctrl + shift + V
+
+## sqlalchemny
+https://docs.sqlalchemy.org/en/latest/core/connections.html
+
 
 

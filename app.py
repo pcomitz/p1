@@ -34,9 +34,28 @@ def index():
 
 @app.route("/authenticate", methods=["POST"])
 def authenticate():
-    name = request.form.get("uname")
-    pw = request.form.get("password")
-    print(f"name {name} ")
-    print(f"pw {pw} ")
-    return name+" "+pw
+    form_name = request.form.get("uname")
+    form_pw = request.form.get("password")
+    print(f"name {form_name} ")
+    print(f"pw {form_pw} ")
+    statement = "select * from users where uname ='"+form_name+"'" 
+    print(f"statement: {statement}")
+    result = db.execute(statement)
+    rows = result.fetchall()
+    print("len(rows) is:", len(rows))
+
+    if len(rows) == 0:
+        print(f"result: {result}")
+        print("result is empty")
+        uname = "none"
+        pw = "none"
+    else:    
+        print(f"result: {result}")
+        for row in rows:
+            print("username:", row['uname'])
+            uname = row['uname']
+            pw = row['pw']
+            print(f"uname: {uname}")    
+
+    return uname+" "+pw
 
