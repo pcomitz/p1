@@ -5,25 +5,31 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Project 1 Login</h1>
+    <h1>Book Club Login</h1>
 
+   <h6><i> {{ message }} </i></h6>
     <form action="{{ url_for('authenticate') }}" method="post">
 
         <div class="form-group">
-            
             <!-- value is uname in python-->
             <input id="username" type="text" class="form-control" name="uname" placeholder="Username">
         </div>
 
         <div class="form-group">
-          
             <input id="password" type="password" class="form-control" name="password" placeholder="Password">
         </div>
 
         <div class="form-group">
-            <button class="btn btn-primary">Submit</button>
-        </div>
-   
+            <!---
+            <button type ="input" class="btn btn-primary" name = "subBtn" value = "Login">Login</button>
+            -->
+            <input type="submit" class="btn btn-primary" name="btn" value="Login">
+        </div>   
+
+        <h6>Click Register if you do not have an account</h6>
+            <div class="form-group">
+                <input type = "submit" class="btn btn-primary" name = "btn" value ="Register">
+            </div>
     </form>
 
 {% endblock %}

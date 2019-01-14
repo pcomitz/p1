@@ -12,14 +12,14 @@ Set up up git
 
 ## Set up heroku
 
-1.  https://www.heroku.com
-2.  pcomitz@live.com
-3.  app is phcp1 
-4.  configure add ons 
-5.  view on https://www.adminer.org
-6.  Need to install heroku cli
-7.  do heroku login on cli
-8. To oconnect to db
+1. https://www.heroku.com
+2. pcomitz@live.com
+3. app is phcp1 
+4. configure add ons 
+5. view on https://www.adminer.org
+6. Need to install heroku cli
+7. do heroku login on cli
+8. To connect to db
 9. DATABASE_URL=$(heroku config:get DATABASE_URL -a your-app) your_process
     - my app is phcp1
     - heroku config:get DATABASE_URL -a phcp1
@@ -56,13 +56,19 @@ Show columns <br>
 <code>
 select * from information_schema.columns where table_schema = 'public'; </code>
 
-<code>
-SELECT * FROM "books" LIMIT 50;
-</code>
+Select<br>
+`SELECT * FROM "books" LIMIT 50;`
 
 <code>select * from users where users.uname = 'Jerry Garcia';</code>
+
 <code>select * from users where users.uname = 'Jerry Garcia' and pw = 'darkstar';</code>
+
 <code>select uname from users where uname = 'Jerry Garcia';</code>
+
+Wildcards in postgresql<br>
+`select * from books where author like '%James%'`
+
+
 
 ## Markdown 
 https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown
@@ -71,8 +77,12 @@ https://code.visualstudio.com/Docs/languages/markdown
 Visual Studio code toggle view 
 ctrl + shift + V
 
-## sqlalchemny
-https://docs.sqlalchemy.org/en/latest/core/connections.html
+*** Cheat Sheet ***  
+https://blog.ghost.org/markdown/
+
+## sqlalchemy
+[Connections Tutorial] (https://docs.sqlalchemy.org/en/latest/core/connections.html)
 
 
+### 1/13/2019
 
