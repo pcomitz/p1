@@ -68,7 +68,13 @@ Select<br>
 Wildcards in postgresql<br>
 `select * from books where author like '%James%'`
 
+Delete <br>
+https://www.w3schools.com/sql/sql_delete.asp <br>
+`DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';` <br>
+`DELETE FROM users WHERE uname = 'PigPen'; `
 
+## SQLAlchemy
+https://docs.sqlalchemy.org/en/latest/core/tutorial.html
 
 ## Markdown 
 https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown
@@ -85,4 +91,15 @@ https://blog.ghost.org/markdown/
 
 
 ### 1/13/2019
+
+## 1/15/2019
+added white space trim with s.strip()
+Login notes
+Case: 
+- Valid username and password entered, Log user in
+- ResultObject , rows == 0  
+  1. No username entered, Login or register clicked
+  2. Invalid username, Login clicked 
+- Register selected , username exists
+- Register selected, new username, proceed with registration 
 
