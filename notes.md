@@ -103,3 +103,4 @@ Case:
 - Register selected , username exists
 - Register selected, new username, proceed with registration 
 
+## 1/19/2019

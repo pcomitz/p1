@@ -124,7 +124,7 @@ def authenticate():
                 return render_template("index.html", message = message)
             
             else:
-                # empty strinsg are falsy
+                # empty strings are falsy
                 # None is considered flase
                 # https://stackoverflow.com/questions/9573244/most-elegant-way-to-check-if-the-string-is-empty-in-python
                 if uname and pw: 
