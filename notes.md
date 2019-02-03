@@ -104,3 +104,9 @@ Case:
 - Register selected, new username, proceed with registration 
 
 ## 1/19/2019
+rewrote app as scratch.py
+
+##2/3/2019
+to run : python scratch.py
+from https://docs.cs50.net/web/2018/x/projects/1/project1.html
+In terms of how to “log a user in,” recall that you can store information inside of the session, which can store different values for different users. In particular, if each user has an id, then you could store that id in the session (e.g., in session["user_id"]) to keep track of which user is currently logged in.

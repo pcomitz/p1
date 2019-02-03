@@ -3,6 +3,9 @@
 # 1/19/2019
 # for trying stuff out !!!
 #
+# LOOONG break - back on 2/3/19 
+#
+
 import os
 from flask import Flask, render_template, request
 from flask_session import Session
@@ -64,6 +67,7 @@ def register(uname, pw):
 
 @app.route("/")
 def index():
+    print("running scratch")
     return render_template("index.html")
 
 @app.route("/authenticate", methods=["POST"])
@@ -109,7 +113,7 @@ def authenticate():
             id = row['id']
             print(f"from db: uname: {uname}, password: {pw}, id:{id}") 
 
-        lenOfRows = len(rows); 
+        lenOfRows = len(rows)
         print(f"number of rows returned from db is: {lenOfRows}")
 
         # check login
@@ -120,7 +124,7 @@ def authenticate():
                 message = form_name + " does not exist in db. Please click Register"\
                 " to create an account"
             elif form_pw == pw: 
-                    login_result = True; 
+                    login_result = True
                     print(f"uname {uname} is logged in")
                     message = uname + " is logged in"
             else:
